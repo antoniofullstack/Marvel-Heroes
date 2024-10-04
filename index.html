@@ -3,43 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marvel Heroes - Conheça seus heróis favoritos da Marvel!"
+    />
+    <meta name="keywords" content="Marvel, Heroes, Avengers, Superheroes" />
     <title>Marvel Heroes</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <style>
-      body,
-      html {
+      /* Global Styles */
+      * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
+      }
+      body,
+      html {
         font-family: 'Roboto', sans-serif;
         background-color: #101010;
         color: #fff;
+        height: 100%;
+        width: 100%;
       }
       .container {
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 20px;
       }
-      header {
+      .header {
         text-align: center;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         border-bottom: 1px solid #555;
       }
-      header img {
+      .header__logo {
         max-width: 200px;
       }
-      nav {
+      .main {
+        flex: 1;
+        padding: 20px;
+        max-width: 1920px;
+        margin: 0 auto;
+      }
+      .main__nav {
         display: flex;
         justify-content: space-between;
-        max-width: 1920px;
+        max-width: 1800px;
         width: 100%;
         height: 78px;
       }
-      nav button {
+      .main__nav-btn {
         background-color: #101010;
         color: #fff;
         width: 180px;
@@ -53,86 +69,100 @@
         transition: background-color 0.3s;
         clip-path: polygon(
           15px 0,
-          /* canto superior esquerdo chanfrado */ 100% 0,
+          100% 0,
           100% calc(100% - 15px),
-          /* canto inferior direito chanfrado */ calc(100% - 15px) 100%,
+          calc(100% - 15px) 100%,
           0 100%,
           0 15px
         );
       }
-      nav button:hover,
-      nav button.active {
+      .main__nav-btn:hover {
         font-size: 16px;
       }
-      nav button.active {
+      .main__nav-btn--active {
+        font-size: 16px;
         background-color: #e62429;
       }
       .hero-content {
         display: flex;
         align-items: center;
         max-width: 1400px;
-        margin-top: 50px;
+        /* height: auto; */
+        margin: 0 auto;
       }
-      .hero-image {
+      .hero-content__image {
         flex: 1;
         text-align: center;
       }
-      .hero-image img {
-        max-width: 100%;
+      .hero-content__image img {
+        width: 60%;
         height: auto;
       }
-      .hero-description {
+      .hero-content__description {
         flex: 1;
         padding-left: 20px;
       }
-      h1 {
+      .hero-content__name {
         font-family: 'Oswald', sans-serif;
         font-size: 56px;
         margin-bottom: 20px;
       }
-      p {
+      .hero-content__text {
         line-height: 1.6;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid #555;
+      }
+      .footer__text {
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <header>
-        <img src="./img/marvel.png" alt="Marvel Logo" />
+      <header class="header">
+        <img src="./img/marvel.png" alt="Marvel Logo" class="header__logo" />
       </header>
-      <nav>
-        <button class="active">HULK</button>
-        <button>SPIDER-MAN</button>
-        <button>IRON MAN</button>
-        <button>THOR</button>
-        <button>HAWKEYE</button>
-        <button>BLACK WIDOW</button>
-        <button>CAPTAIN AMERICA</button>
-      </nav>
-      <div class="hero-content">
-        <div class="hero-image">
-          <img src="./img/HULK.png" alt="Hulk" />
+      <main class="main">
+        <nav class="main__nav">
+          <button class="main__nav-btn main__nav-btn--active">HULK</button>
+          <button class="main__nav-btn">SPIDER-MAN</button>
+          <button class="main__nav-btn">IRON MAN</button>
+          <button class="main__nav-btn">THOR</button>
+          <button class="main__nav-btn">HAWKEYE</button>
+          <button class="main__nav-btn">BLACK WIDOW</button>
+          <button class="main__nav-btn">CAPTAIN AMERICA</button>
+        </nav>
+        <div class="hero-content">
+          <div class="hero-content__image">
+            <img src="./img/HULK.png" alt="Hulk" loading="lazy" />
+          </div>
+          <div class="hero-content__description">
+            <h1 class="hero-content__name">Hulk</h1>
+            <p class="hero-content__text">
+              Bioscience genius Dr. Bruce Banner focused his major studies on
+              the effects of gamma radiation on humans, working alongside Dr.
+              Betty Ross at a Virginia University lab. Dr. Ross' father, General
+              "Thunderbolt" Ross of the U.S. Army, channeled Banner's work into
+              a program to develop weapons for the military, unbeknownst to both
+              doctors. When Banner decided to test what he learned on himself,
+              he triggered a fantastic transformation in himself that resulted
+              in an immense, hulking figure fueled by his own rage.
+            </p>
+            <p class="hero-content__text">
+              Having destroyed his lab as the creature, and inadvertently
+              harming Ross in the process, Banner slipped away to avoid capture
+              and study by the Army and began a desperate quest for a cure to
+              his bizarre affliction.
+            </p>
+          </div>
         </div>
-        <div class="hero-description">
-          <h1>Hulk</h1>
-          <p>
-            Bioscience genius Dr. Bruce Banner focused his major studies on the
-            effects of gamma radiation on humans, working alongside Dr. Betty
-            Ross at a Virginia University lab. Dr. Ross' father, General
-            "Thunderbolt" Ross of the U.S. Army, channeled Banner's work into a
-            program to develop weapons for the military, unbeknownst to both
-            doctors. When Banner decided to test what he learned on himself, he
-            triggered a fantastic transformation in himself that resulted in an
-            immense, hulking figure fueled by his own rage.
-          </p>
-          <p>
-            Having destroyed his lab as the creature, and inadvertently harming
-            Ross in the process, Banner slipped away to avoid capture and study
-            by the Army and began a desperate quest for a cure to his bizarre
-            affliction.
-          </p>
-        </div>
-      </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__text">&copy; 2023 Marvel Heroes</p>
+      </footer>
     </div>
 
     <script>
@@ -181,20 +211,30 @@
         },
       };
 
-      const buttons = document.querySelectorAll('nav button');
-      const heroImage = document.querySelector('.hero-image img');
-      const heroName = document.querySelector('h1');
-      const heroDescription = document.querySelector('.hero-description p');
+      const buttons = document.querySelectorAll('.main__nav-btn');
+      const heroImage = document.querySelector('.hero-content__image img');
+      const heroName = document.querySelector('.hero-content__name');
+      const heroDescription = document.querySelector(
+        '.hero-content__description'
+      );
 
       buttons.forEach((button) => {
         button.addEventListener('click', () => {
           const hero = heroes[button.textContent];
-          heroImage.src = hero.image;
-          heroName.textContent = hero.name;
-          heroDescription.textContent = hero.description;
+          if (hero) {
+            heroImage.src = hero.image;
+            heroName.textContent = hero.name;
+            heroDescription.textContent = hero.description;
 
-          buttons.forEach((btn) => btn.classList.remove('active'));
-          button.classList.add('active');
+            buttons.forEach((btn) =>
+              btn.classList.remove('main__nav-btn--active')
+            );
+            button.classList.add('main__nav-btn--active');
+          } else {
+            console.error(
+              `Hero not found for button text: ${button.textContent}`
+            );
+          }
         });
       });
     </script>
