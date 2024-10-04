@@ -1,6 +1,6 @@
 # Marvel Heroes
 
-![Marvel Logo](https://raw.githubusercontent.com/tryber/sd-014-b-marvel-project/main/img/MARVEL.png)
+![Marvel Logo](https://github.com/antonio4all/Marvel-Heroes/blob/main/img/MARVEL.png)
 
 Bem-vindo ao projeto Marvel Heroes! Este projeto é uma página web dedicada a apresentar alguns dos heróis mais icônicos da Marvel. Aqui você poderá conhecer mais sobre seus heróis favoritos, suas histórias e características.
 
