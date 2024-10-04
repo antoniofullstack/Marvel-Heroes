@@ -1,21 +1,78 @@
-## O que você deve fazer
+# Marvel Heroes
 
-O teste consiste em corrigir [este](./index.html) documento HTML que está quebrado propositalmente. Você deve arrumar tanto a estilização, quanto escrever o script que adiciona a interação com página.
+![Marvel Logo](./img/marvel.png)
 
-No gif abaixo você encotrará uma demonstração de como deve ficar a página estática final.
+Bem-vindo ao projeto Marvel Heroes! Este projeto é uma página web dedicada a apresentar alguns dos heróis mais icônicos da Marvel. Aqui você poderá conhecer mais sobre seus heróis favoritos, suas histórias e características.
 
-![video.gif](./video.gif)
+## Índice
 
-1) Não há necessidade de uso de nenhum framework.
-2) As imagens que serão usadas se encontram dentro do diretório `img`
-3) As fontes a serem utilizadas são `Oswald` e `Roboto`. Você deve utilizar a Roboto para o texto em geral, a segunda fonte deve ser utlizada somente no nome do personagem em destaque.
-4) As cores utilizadas são: 
-    - #101010
-    - #e62429
-    - #fff
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Como Executar](#como-executar)
+- [Contribuições](#contribuições)
+- [Melhorias Futuras](#melhorias-futuras)
+- [Licença](#licença)
 
-## O que esperamos de você
+## Visão Geral
 
-Queremos saber se você conhece os conceitos básicos de HTML, CSS e JS. Procure deixar o documento final o mais próximo possível do exemplo demonstrado.
+A página é construída utilizando HTML e CSS, com o objetivo de fornecer uma interface limpa e responsiva. A estrutura do projeto é simples e direta, facilitando a navegação e a leitura do conteúdo.
 
-Também obeservaremos a organização deste pequeno projeto.
+## Funcionalidades
+
+- 🦸 Navegação intuitiva entre diferentes heróis da Marvel
+- 🖼️ Exibição de imagens e descrições detalhadas de cada herói
+- 📱 Design responsivo que se adapta a diferentes tamanhos de tela
+- 🔄 Atualização dinâmica do conteúdo sem recarregar a página
+
+## Estrutura do Projeto
+
+### index.html
+
+Este arquivo contém a estrutura principal da página, incluindo:
+
+- Um cabeçalho com o título do projeto.
+- Um menu de navegação com botões para diferentes heróis.
+- Uma seção principal que exibe informações detalhadas sobre o herói selecionado.
+- Um rodapé com informações de direitos autorais.
+
+### styles.css
+
+Este arquivo contém as regras de estilo utilizadas na página, incluindo:
+
+- Estilização básica para resetar margens e preenchimentos.
+- Estilos para o corpo da página e elementos de texto.
+- Classes específicas para a estrutura e aparência dos componentes principais, como `.main__nav`, e `.footer`.
+- Uso da Metodologia BEM para a organização e estilização dos elementos da página.
+
+## Tecnologias Utilizadas
+
+- **HTML**: Para a estruturação do conteúdo da página.
+- **CSS**: Para a estilização e design da página.
+- **JavaScript**: Para a interação dinâmica com a página, permitindo a troca de heróis ao clicar nos botões de navegação.
+
+## Como Executar
+
+Para visualizar a página, siga os passos abaixo:
+
+1. Clone o repositório para o seu ambiente local usando `git clone <url-do-repositorio>`.
+2. Certifique-se de ter um navegador web atualizado instalado.
+3. Abra o arquivo `index.html` em um navegador web de sua escolha.
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests. Por favor, siga as diretrizes de contribuição fornecidas no arquivo `CONTRIBUTING.md`.
+
+## Melhorias Futuras
+
+- Adicionar mais heróis e suas histórias.
+- Implementar uma API para obter informações atualizadas dos heróis.
+
+## Licença
+
+Este projeto é licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Aproveite sua visita ao Marvel Heroes e conheça mais sobre esses incríveis personagens!
